@@ -22,57 +22,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b1d4bb7f-fc8d-424d-b567-b8ef016d7cba" name="Default Changelist" comment="create prj">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android_tutorial_anhnn/FakeData.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android_tutorial_anhnn/ShareViewModel.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android_tutorial_anhnn/base/BaseFragment.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android_tutorial_anhnn/data/model/Icon.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android_tutorial_anhnn/data/repo/repo.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android_tutorial_anhnn/data/source/source.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android_tutorial_anhnn/ui/home/HomeFragment.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android_tutorial_anhnn/ui/home/IconAdapter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_amazed.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_angel.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_bored.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_cool.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_cry.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_devil.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_dizzy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_furious.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_grimacing.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_happy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_kiss.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_puke.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_sleeping.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_smirking.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_thinking.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_worried.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_icon.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_annotation_annotation_experimental_1_1_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_runtime_2_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_1_6_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_ktx_1_6_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_customview_customview_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_drawerlayout_drawerlayout_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_common_2_3_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_2_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_core_2_3_1_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_2_3_1_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_2_3_1_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_5_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_common_1_5_10.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/app/android-tutorial-anhnn.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/android-tutorial-anhnn.app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android_tutorial_anhnn/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android_tutorial_anhnn/ui/main/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android_tutorial_anhnn/AppExtention.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android_tutorial_anhnn/AppExtention.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android_tutorial_anhnn/FakeData.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android_tutorial_anhnn/FakeData.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_icon.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_icon.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,6 +190,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="create prj" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="309" y="47" key="#Inspections" timestamp="1629198318496">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="309" y="47" key="#Inspections/0.0.1366.738@0.0.1366.738" timestamp="1629198318496" />
     <state x="477" y="84" key="#com.intellij.ide.util.MemberChooser" timestamp="1629191563439">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -252,25 +214,25 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="546" y="281" key="Github.Dialog.Accounts.Choose/0.0.1366.738@0.0.1366.738" timestamp="1629177549636" />
-    <state width="1323" height="79" key="GridCell.Tab.0.bottom" timestamp="1629193258794">
+    <state width="1323" height="182" key="GridCell.Tab.0.bottom" timestamp="1629198616473">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="79" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1629193258794" />
-    <state width="1323" height="79" key="GridCell.Tab.0.center" timestamp="1629193258794">
+    <state width="1323" height="182" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1629198616473" />
+    <state width="1323" height="182" key="GridCell.Tab.0.center" timestamp="1629198616473">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="79" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1629193258794" />
-    <state width="1323" height="79" key="GridCell.Tab.0.left" timestamp="1629193258793">
+    <state width="1323" height="182" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1629198616473" />
+    <state width="1323" height="182" key="GridCell.Tab.0.left" timestamp="1629198616472">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="79" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1629193258793" />
-    <state width="1323" height="79" key="GridCell.Tab.0.right" timestamp="1629193258794">
+    <state width="1323" height="182" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1629198616472" />
+    <state width="1323" height="182" key="GridCell.Tab.0.right" timestamp="1629198616473">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="79" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1629193258794" />
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1629177539778">
+    <state width="1323" height="182" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1629198616473" />
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1629198046584">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1629177539778" />
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1629198046584" />
   </component>
 </project>
