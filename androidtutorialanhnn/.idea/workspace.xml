@@ -18,13 +18,105 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad14bb5d-62c8-4ac2-a585-9ff095455e1d" name="Default Changelist" comment="" />
+    <list default="true" id="b1d4bb7f-fc8d-424d-b567-b8ef016d7cba" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../FSoftAssignmentDay78/app/src/main/java/com/example/fsoftassignmentday78/Home/HomeFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FSoftAssignmentDay78/app/src/main/java/com/example/fsoftassignmentday78/Service/MediaService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FSoftAssignmentDay78/app/src/main/res/layout/fragment_home.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FSoftAssignmentDay78/app/src/main/res/raw/ThucGiac.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GST_Final_AnhNN51/app/src/main/java/com/example/gst_final_anhnn51/MListener.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GST_Final_AnhNN51/app/src/main/java/com/example/gst_final_anhnn51/MyService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GST_Final_AnhNN51/app/src/main/java/com/example/gst_final_anhnn51/ServiceListener.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RTSPStream/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RTSPStream/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RTSPStream/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RTSPStream/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RTSPStream/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RTSPStream/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RTSPStream/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RTSPStream/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RTSPStream/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RTSPStream/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RTSPStream/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RTSPStream/app/src/androidTest/java/com/example/rtspstream/ExampleInstrumentedTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RTSPStream/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RTSPStream/app/src/main/java/com/example/rtspstream/MainActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RTSPStream/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RTSPStream/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RTSPStream/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RTSPStream/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RTSPStream/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RTSPStream/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RTSPStream/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RTSPStream/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RTSPStream/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RTSPStream/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RTSPStream/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RTSPStream/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RTSPStream/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RTSPStream/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RTSPStream/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RTSPStream/app/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RTSPStream/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RTSPStream/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RTSPStream/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RTSPStream/app/src/test/java/com/example/rtspstream/ExampleUnitTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RTSPStream/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RTSPStream/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RTSPStream/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RTSPStream/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RTSPStream/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RTSPStream/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RTSPStream/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3OrtherApp/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3OrtherApp/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3OrtherApp/.idea/androidDexCompiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3OrtherApp/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3OrtherApp/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3OrtherApp/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3OrtherApp/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3OrtherApp/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3OrtherApp/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3OrtherApp/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3OrtherApp/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3OrtherApp/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3OrtherApp/app/src/androidTest/java/com/example/assignment3ortherapp/ExampleInstrumentedTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3OrtherApp/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3OrtherApp/app/src/main/java/com/example/assignment3ortherapp/MainActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3OrtherApp/app/src/main/java/com/example/assignment3ortherapp/MyBroadCast.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3OrtherApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3OrtherApp/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3OrtherApp/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3OrtherApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3OrtherApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3OrtherApp/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3OrtherApp/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3OrtherApp/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3OrtherApp/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3OrtherApp/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3OrtherApp/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3OrtherApp/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3OrtherApp/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3OrtherApp/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3OrtherApp/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3OrtherApp/app/src/main/res/values-night/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3OrtherApp/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3OrtherApp/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3OrtherApp/app/src/main/res/values/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3OrtherApp/app/src/test/java/com/example/assignment3ortherapp/ExampleUnitTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3OrtherApp/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3OrtherApp/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3OrtherApp/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3OrtherApp/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3OrtherApp/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3OrtherApp/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3OrtherApp/settings.gradle" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[VirtualDevicePath@C:\Users\Admin\.android\avd\Pixel_2_Edited_API_26.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[SerialNumber@5210b814c00f34b1]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -33,7 +125,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1wq0PdNYX5xiCDe64XjT1EDQ5vc" />
+  <component name="ProjectId" id="1wq4EZyK2eO1Lt1KrDszBqSwFlO" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
@@ -44,7 +136,6 @@
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pathVariables" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
@@ -56,7 +147,7 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="android-tutorial-anhnn.app" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
@@ -118,11 +209,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ad14bb5d-62c8-4ac2-a585-9ff095455e1d" name="Default Changelist" comment="" />
-      <created>1629170788721</created>
+      <changelist id="b1d4bb7f-fc8d-424d-b567-b8ef016d7cba" name="Default Changelist" comment="" />
+      <created>1629172673985</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1629170788721</updated>
+      <updated>1629172673985</updated>
     </task>
     <servers />
   </component>
@@ -136,6 +227,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
