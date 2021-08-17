@@ -16,6 +16,8 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(), IconAdapter.IconItemLi
     override fun getLayoutId() = R.layout.fragment_home
 
     override fun initView() {
+
+
         var staggeredGridLayoutManager = StaggeredGridLayoutManager(4,LinearLayoutManager.VERTICAL )
         binding.rclvHome.layoutManager = staggeredGridLayoutManager
         iconAdapter.list = FakeData.getIcons()
