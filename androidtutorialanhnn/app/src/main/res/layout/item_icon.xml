@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="com.example.android_tutorial_anhnn.data.model.Icon" />
+
+        <import type="com.example.android_tutorial_anhnn.ui.home.IconAdapter.IconItemListener" />
+
+        <variable
+            name="item"
+            type="Icon" />
+
+        <variable
+            name="listener"
+            type="IconItemListener" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="@color/background_gray"
+        android:onClick="@{()-> listener.onItemClick(item)}">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:cardCornerRadius="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ivIcon"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:src="@{item.src}" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:gravity="center"
+            android:id="@+id/tvIcon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@{item.name}"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/cvIcon"
+            tool:text="ccc" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
