@@ -22,9 +22,9 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="70dp"
+        android:id="@+id/ctlIcon"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:onClick="@{()-> listener.onItemClick(item)}">
+        android:layout_margin="10dp">
 
 <!--        <androidx.cardview.widget.CardView-->
 <!--            android:id="@+id/cvIcon"-->
@@ -51,7 +51,7 @@
             android:id="@+id/cvIcon"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            anhnn:setSrc="@{item.src}" />
+            />
 
         <TextView
             android:id="@+id/tvIcon"
@@ -60,7 +60,6 @@
             android:layout_marginTop="4dp"
             android:gravity="center"
             android:singleLine="true"
-            android:text="@{item.name}"
             android:textColor="@color/black"
             android:textSize="14sp"
             app:layout_constraintTop_toBottomOf="@id/cvIcon"

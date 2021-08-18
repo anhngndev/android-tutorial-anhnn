@@ -1,13 +1,17 @@
 package com.example.android_tutorial_anhnn.ui.home
 
+import android.content.Context
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.example.android_tutorial_anhnn.R
+import com.example.android_tutorial_anhnn.SetSrc
 import com.example.android_tutorial_anhnn.data.model.Icon
 import com.example.android_tutorial_anhnn.databinding.ItemIconBinding
+import com.squareup.picasso.Picasso
+import kotlin.coroutines.coroutineContext
 
 class IconAdapter : RecyclerView.Adapter<IconAdapter.IconViewHolder>() {
 
@@ -17,7 +21,7 @@ class IconAdapter : RecyclerView.Adapter<IconAdapter.IconViewHolder>() {
             notifyDataSetChanged()
         }
     var iconListener: IconItemListener? = null
-
+    var context: Context?= null
 
     interface IconItemListener {
         fun onItemClick(item: Icon)
@@ -40,8 +44,15 @@ class IconAdapter : RecyclerView.Adapter<IconAdapter.IconViewHolder>() {
 
     override fun onBindViewHolder(holder: IconViewHolder, position: Int) {
         val item = list[position]
-        holder.binding.item = item
-        holder.binding.listener = iconListener
+
+        holder.binding.tvIcon.text = item.name
+        Picasso.with(context).load(item.src).into(holder.binding.cvIcon);
+
+        holder.binding.ctlIcon.setOnClickListener {
+            iconListener?.onItemClick(item)
+        }
+//        holder.binding.item = item
+//        holder.binding.listener = iconListener
     }
 
     override fun getItemCount() = list.size

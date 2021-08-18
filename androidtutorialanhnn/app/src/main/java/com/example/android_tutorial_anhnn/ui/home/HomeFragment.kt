@@ -17,11 +17,11 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(), IconAdapter.IconItemLi
 
     override fun initView() {
 
-
         var staggeredGridLayoutManager = StaggeredGridLayoutManager(4,LinearLayoutManager.VERTICAL )
         binding.rclvHome.layoutManager = staggeredGridLayoutManager
         iconAdapter.list = FakeData.getIcons()
         iconAdapter.iconListener = this
+        iconAdapter.context = requireContext()
 
         binding.rclvHome.adapter = iconAdapter
 
