@@ -1,21 +1,18 @@
 package com.example.android_tutorial_anhnn.ui.home
 
 import android.content.Context
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.example.android_tutorial_anhnn.R
-import com.example.android_tutorial_anhnn.SetSrc
-import com.example.android_tutorial_anhnn.data.model.Icon
-import com.example.android_tutorial_anhnn.databinding.ItemIconBinding
+import com.example.android_tutorial_anhnn.data.model.AppInfor
+import com.example.android_tutorial_anhnn.databinding.ItemAppInforBinding
 import com.squareup.picasso.Picasso
-import kotlin.coroutines.coroutineContext
 
-class IconAdapter : RecyclerView.Adapter<IconAdapter.IconViewHolder>() {
+class AppInforAdapter : RecyclerView.Adapter<AppInforAdapter.IconViewHolder>() {
 
-    var list: MutableList<Icon> = mutableListOf()
+    var list: MutableList<AppInfor> = mutableListOf()
         set(value) {
             field = value
             notifyDataSetChanged()
@@ -23,19 +20,11 @@ class IconAdapter : RecyclerView.Adapter<IconAdapter.IconViewHolder>() {
     var iconListener: IconItemListener? = null
     var context: Context?= null
 
-    interface IconItemListener {
-        fun onItemClick(item: Icon)
-    }
-
-    class IconViewHolder(val binding: ItemIconBinding) :
-        RecyclerView.ViewHolder(binding.root) {
-    }
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): IconViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
-        val binding = DataBindingUtil.inflate<ItemIconBinding>(
+        val binding = DataBindingUtil.inflate<ItemAppInforBinding>(
             layoutInflater,
-            R.layout.item_icon,
+            R.layout.item_app_infor,
             parent,
             false
         )
@@ -46,14 +35,21 @@ class IconAdapter : RecyclerView.Adapter<IconAdapter.IconViewHolder>() {
         val item = list[position]
 
         holder.binding.tvIcon.text = item.name
-        Picasso.with(context).load(item.src).into(holder.binding.cvIcon);
+        Picasso.with(context).load(item.url).into(holder.binding.cvIcon);
 
         holder.binding.ctlIcon.setOnClickListener {
             iconListener?.onItemClick(item)
         }
-//        holder.binding.item = item
-//        holder.binding.listener = iconListener
     }
 
     override fun getItemCount() = list.size
+
+    class IconViewHolder(val binding: ItemAppInforBinding) :
+        RecyclerView.ViewHolder(binding.root) {
+    }
+
+    interface IconItemListener {
+        fun onItemClick(item: AppInfor)
+    }
+
 }

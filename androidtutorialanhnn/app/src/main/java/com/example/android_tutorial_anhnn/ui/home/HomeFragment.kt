@@ -1,18 +1,17 @@
 package com.example.android_tutorial_anhnn.ui.home
 
-import android.graphics.drawable.GradientDrawable
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.example.android_tutorial_anhnn.FakeData
 import com.example.android_tutorial_anhnn.R
 import com.example.android_tutorial_anhnn.base.BaseFragment
-import com.example.android_tutorial_anhnn.data.model.Icon
+import com.example.android_tutorial_anhnn.data.model.AppInfor
 import com.example.android_tutorial_anhnn.databinding.FragmentHomeBinding
 
-class HomeFragment : BaseFragment<FragmentHomeBinding>(), IconAdapter.IconItemListener{
+class HomeFragment : BaseFragment<FragmentHomeBinding>(), AppInforAdapter.IconItemListener{
 
-    private var iconAdapter= IconAdapter()
+    private var iconAdapter= AppInforAdapter()
     override fun getLayoutId() = R.layout.fragment_home
 
     override fun initView() {
@@ -30,7 +29,7 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(), IconAdapter.IconItemLi
     override fun setAction() {
     }
 
-    override fun onItemClick(item: Icon) {
-        Toast.makeText(requireContext(),"${item.name} ${item.src}",Toast.LENGTH_LONG).show()
+    override fun onItemClick(item: AppInfor) {
+        Toast.makeText(requireContext(),"${item.name} ${item.url}",Toast.LENGTH_LONG).show()
     }
 }

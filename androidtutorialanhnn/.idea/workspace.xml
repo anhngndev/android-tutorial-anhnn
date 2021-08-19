@@ -21,18 +21,21 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1d4bb7f-fc8d-424d-b567-b8ef016d7cba" name="Default Changelist" comment="change image item">
+    <list default="true" id="b1d4bb7f-fc8d-424d-b567-b8ef016d7cba" name="Default Changelist" comment="remove data binding">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android_tutorial_anhnn/data/model/AppInfor.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android_tutorial_anhnn/FakeData.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android_tutorial_anhnn/FakeData.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android_tutorial_anhnn/data/model/Icon.kt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android_tutorial_anhnn/ui/home/HomeFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android_tutorial_anhnn/ui/home/HomeFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android_tutorial_anhnn/ui/home/IconAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android_tutorial_anhnn/ui/home/IconAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_icon.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_icon.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android_tutorial_anhnn/ui/home/IconAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android_tutorial_anhnn/ui/home/AppInforAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_icon.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_app_infor.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[SerialNumber@5210b814c00f34b1]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[VirtualDevicePath@C:\Users\Admin\.android\avd\Pixel_2_Edited_API_26.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -172,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629201762113</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="remove data binding">
+      <created>1629277598670</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1629277598670</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -190,7 +200,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="create prj" />
     <MESSAGE value="change image item" />
-    <option name="LAST_COMMIT_MESSAGE" value="change image item" />
+    <MESSAGE value="remove data binding" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove data binding" />
   </component>
   <component name="WindowStateProjectService">
     <state x="309" y="47" key="#Inspections" timestamp="1629198318496">
@@ -217,25 +228,25 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="546" y="281" key="Github.Dialog.Accounts.Choose/0.0.1366.738@0.0.1366.738" timestamp="1629177549636" />
-    <state width="1323" height="182" key="GridCell.Tab.0.bottom" timestamp="1629198616473">
+    <state width="1323" height="489" key="GridCell.Tab.0.bottom" timestamp="1629277340171">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="182" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1629198616473" />
-    <state width="1323" height="182" key="GridCell.Tab.0.center" timestamp="1629198616473">
+    <state width="1323" height="489" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1629277340171" />
+    <state width="1323" height="489" key="GridCell.Tab.0.center" timestamp="1629277340170">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="182" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1629198616473" />
-    <state width="1323" height="182" key="GridCell.Tab.0.left" timestamp="1629198616472">
+    <state width="1323" height="489" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1629277340170" />
+    <state width="1323" height="489" key="GridCell.Tab.0.left" timestamp="1629277340170">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="182" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1629198616472" />
-    <state width="1323" height="182" key="GridCell.Tab.0.right" timestamp="1629198616473">
+    <state width="1323" height="489" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1629277340170" />
+    <state width="1323" height="489" key="GridCell.Tab.0.right" timestamp="1629277340171">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="182" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1629198616473" />
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1629201770021">
+    <state width="1323" height="489" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1629277340170" />
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1629277606268">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1629201770021" />
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1629277606268" />
   </component>
 </project>

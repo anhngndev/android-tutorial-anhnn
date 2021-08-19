@@ -6,13 +6,13 @@
 
     <data>
 
-        <import type="com.example.android_tutorial_anhnn.data.model.Icon" />
+        <import type="com.example.android_tutorial_anhnn.data.model.AppInfor" />
 
-        <import type="com.example.android_tutorial_anhnn.ui.home.IconAdapter.IconItemListener" />
+        <import type="com.example.android_tutorial_anhnn.ui.home.AppInforAdapter.IconItemListener" />
 
         <variable
             name="item"
-            type="Icon" />
+            type="AppInfor" />
 
         <variable
             name="listener"
