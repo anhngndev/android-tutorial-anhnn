@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:anhnn="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="com.example.android_tutorial_anhnn.data.model.AppInfor" />
+
+        <import type="com.example.android_tutorial_anhnn.ui.home.AppInforAdapter.IconItemListener" />
+
+        <variable
+            name="item"
+            type="AppInfor" />
+
+        <variable
+            name="listener"
+            type="IconItemListener" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="70dp"
+        android:id="@+id/ctlIcon"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/cvIcon"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            anhnn:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/ivIcon"-->
+<!--                android:layout_width="50dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                anhnn:setSrc="@{item.src}" />-->
+
+<!--        </androidx.cardview.widget.CardView>-->
+
+
+        <ImageView
+            android:padding="4dp"
+            anhnn:layout_constraintTop_toTopOf="parent"
+            anhnn:layout_constraintStart_toStartOf="parent"
+            anhnn:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/cvIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            />
+
+        <TextView
+            android:id="@+id/tvIcon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/cvIcon"
+            tool:text="ccc" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
