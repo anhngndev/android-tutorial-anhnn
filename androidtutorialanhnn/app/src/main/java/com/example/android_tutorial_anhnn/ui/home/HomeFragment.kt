@@ -16,8 +16,9 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(), AppInforAdapter.IconIt
     , DeleteDialogListener
     ,AddDialogListener{
 
-    private var iconAdapter= AppInforAdapter()
+    private var appAdapter= AppInforAdapter()
     private lateinit var chooseApp : AppInfor
+    private var choosePosition = 0
     private lateinit var currentList: MutableList<AppInfor>
 
     override fun getLayoutId() = R.layout.fragment_home
@@ -27,11 +28,11 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(), AppInforAdapter.IconIt
         currentList = FakeData.getIcons()
         var staggeredGridLayoutManager = StaggeredGridLayoutManager(4,LinearLayoutManager.VERTICAL )
         binding.rclvHome.layoutManager = staggeredGridLayoutManager
-        iconAdapter.list = currentList
-        iconAdapter.iconListener = this
-        iconAdapter.context = requireContext()
+        appAdapter.list = currentList
+        appAdapter.iconListener = this
+        appAdapter.context = requireContext()
 
-        binding.rclvHome.adapter = iconAdapter
+        binding.rclvHome.adapter = appAdapter
 
     }
 
@@ -43,11 +44,10 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(), AppInforAdapter.IconIt
         }
     }
 
-    override fun onItemClick(item: AppInfor) {
-
+    override fun onItemClick(position:Int, item: AppInfor) {
         chooseApp = item
+        choosePosition = position
 
-//      can use bundle
         val deleteDialog= DeleteDialog()
         deleteDialog.show(requireActivity().supportFragmentManager.beginTransaction()
             .setCustomAnimations(R.anim.slide_enter_left_to_right
@@ -58,8 +58,7 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(), AppInforAdapter.IconIt
     }
 
     override fun onClickAccept() {
-        currentList.remove(chooseApp)
-        iconAdapter.list = currentList
+        appAdapter.removeItem(choosePosition ,chooseApp)
     }
 
     override fun onClickReject() {
@@ -67,8 +66,7 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(), AppInforAdapter.IconIt
     }
 
     override fun onClickAcceptAdd(item: AppInfor) {
-        currentList.add(item)
-        iconAdapter.list = currentList
+        appAdapter.addItem(appAdapter.itemCount,item )
     }
 
     override fun onClickRejectAdd() {
