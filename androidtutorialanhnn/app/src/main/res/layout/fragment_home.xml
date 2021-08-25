@@ -17,5 +17,15 @@
             android:id="@+id/rclvHome"
             android:layout_height="match_parent"/>
 
+        <TextView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:id="@+id/tvAdd"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/border_11_light_blue_fill"/>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
