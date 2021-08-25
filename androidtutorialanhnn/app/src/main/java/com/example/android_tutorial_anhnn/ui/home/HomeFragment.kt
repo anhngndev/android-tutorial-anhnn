@@ -44,15 +44,18 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(), AppInforAdapter.IconIt
         }
 
         binding.tvChangeLayout.setOnClickListener {
-            var layoutManager = StaggeredGridLayoutManager(4, LinearLayoutManager.VERTICAL)
             if (layoutMode) {
-                layoutManager =
-                    StaggeredGridLayoutManager(2, LinearLayoutManager.VERTICAL)
+                var layoutManager =
+                    LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
+                binding.rclvHome.layoutManager = layoutManager
+
                 layoutMode = false
             } else{
+                var layoutManager = StaggeredGridLayoutManager(4, LinearLayoutManager.VERTICAL)
+                binding.rclvHome.layoutManager = layoutManager
+
                 layoutMode = true
             }
-            binding.rclvHome.layoutManager = layoutManager
         }
     }
 
