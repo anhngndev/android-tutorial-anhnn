@@ -12,13 +12,13 @@ import com.example.android_tutorial_anhnn.ui.addapp.AddDialogListener
 import com.example.android_tutorial_anhnn.ui.deleteapp.DeleteDialogListener
 import com.example.android_tutorial_anhnn.ui.deleteapp.DeleteDialog
 
-class HomeFragment : BaseFragment<FragmentHomeBinding>(), AppInforAdapter.IconItemListener
-    , DeleteDialogListener
-    ,AddDialogListener{
+class HomeFragment : BaseFragment<FragmentHomeBinding>(), AppInforAdapter.IconItemListener,
+    DeleteDialogListener, AddDialogListener {
 
-    private var appAdapter= AppInforAdapter()
-    private lateinit var chooseApp : AppInfor
+    private var appAdapter = AppInforAdapter()
+    private lateinit var chooseApp: AppInfor
     private var choosePosition = 0
+    private var layoutMode = true
     private lateinit var currentList: MutableList<AppInfor>
 
     override fun getLayoutId() = R.layout.fragment_home
@@ -26,7 +26,7 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(), AppInforAdapter.IconIt
     override fun initView() {
 
         currentList = FakeData.getIcons()
-        var staggeredGridLayoutManager = StaggeredGridLayoutManager(4,LinearLayoutManager.VERTICAL )
+        var staggeredGridLayoutManager = StaggeredGridLayoutManager(4, LinearLayoutManager.VERTICAL)
         binding.rclvHome.layoutManager = staggeredGridLayoutManager
         appAdapter.list = currentList
         appAdapter.iconListener = this
@@ -38,27 +38,46 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(), AppInforAdapter.IconIt
 
     override fun setAction() {
         binding.tvAdd.setOnClickListener {
-            val addDialog= AddDialog()
+            val addDialog = AddDialog()
             addDialog.show(requireActivity().supportFragmentManager.beginTransaction(), "add")
             addDialog.iListener = this
         }
+
+        binding.tvChangeLayout.setOnClickListener {
+            if (layoutMode) {
+                var layoutManager =
+                    LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
+                binding.rclvHome.layoutManager = layoutManager
+
+                layoutMode = false
+            } else{
+                var layoutManager = StaggeredGridLayoutManager(4, LinearLayoutManager.VERTICAL)
+                binding.rclvHome.layoutManager = layoutManager
+
+                layoutMode = true
+            }
+        }
     }
 
-    override fun onItemClick(position:Int, item: AppInfor) {
+    override fun onItemClick(position: Int, item: AppInfor) {
         chooseApp = item
         choosePosition = position
 
-        val deleteDialog= DeleteDialog()
-        deleteDialog.show(requireActivity().supportFragmentManager.beginTransaction()
-            .setCustomAnimations(R.anim.slide_enter_left_to_right
-            ,R.anim.slide_exit_right_to_left
-            ,R.anim.slide_pop_enter_right_to_left
-            ,R.anim.slide_pop_exit_left_to_right), "delete")
+        val deleteDialog = DeleteDialog()
+        deleteDialog.show(
+            requireActivity().supportFragmentManager.beginTransaction()
+                .setCustomAnimations(
+                    R.anim.slide_enter_left_to_right,
+                    R.anim.slide_exit_right_to_left,
+                    R.anim.slide_pop_enter_right_to_left,
+                    R.anim.slide_pop_exit_left_to_right
+                ), "delete"
+        )
         deleteDialog.iListener = this
     }
 
     override fun onClickAccept() {
-        appAdapter.removeItem(choosePosition ,chooseApp)
+        appAdapter.removeItem(choosePosition, chooseApp)
     }
 
     override fun onClickReject() {
@@ -66,7 +85,7 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(), AppInforAdapter.IconIt
     }
 
     override fun onClickAcceptAdd(item: AppInfor) {
-        appAdapter.addItem(appAdapter.itemCount,item )
+        appAdapter.addItem(appAdapter.itemCount, item)
     }
 
     override fun onClickRejectAdd() {
