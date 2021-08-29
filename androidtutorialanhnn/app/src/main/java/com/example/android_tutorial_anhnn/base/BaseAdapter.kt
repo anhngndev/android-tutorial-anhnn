@@ -89,6 +89,4 @@ abstract class BaseAdapter : RecyclerView.Adapter<BaseAdapter.BaseVH<Any>>() {
 
         }
     }
-
-
 }
