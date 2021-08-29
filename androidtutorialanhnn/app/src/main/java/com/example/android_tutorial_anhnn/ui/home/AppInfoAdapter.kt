@@ -11,7 +11,8 @@ import com.example.android_tutorial_anhnn.data.model.AppInfor
 import com.example.android_tutorial_anhnn.databinding.ItemAppInforBinding
 import com.squareup.picasso.Picasso
 
-class AppInforAdapter : RecyclerView.Adapter<AppInforAdapter.IconViewHolder>() {
+class AppInfoAdapter : RecyclerView.Adapter<AppInfoAdapter.IconViewHolder>() {
+
     private val TAG = "AppInforAdapter"
     var list: MutableList<AppInfor> = mutableListOf()
         set(value) {
@@ -19,10 +20,12 @@ class AppInforAdapter : RecyclerView.Adapter<AppInforAdapter.IconViewHolder>() {
             notifyDataSetChanged()
         }
     var iconListener: IconItemListener? = null
-    var context: Context? = null
+    private var context: Context? = null
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): IconViewHolder {
-        val layoutInflater = LayoutInflater.from(parent.context)
+        Log.d(TAG, "onCreateViewHolder: ")
+        context = parent.context
+        val layoutInflater = LayoutInflater.from(context)
         val binding = DataBindingUtil.inflate<ItemAppInforBinding>(
             layoutInflater,
             R.layout.item_app_infor,
@@ -33,9 +36,10 @@ class AppInforAdapter : RecyclerView.Adapter<AppInforAdapter.IconViewHolder>() {
     }
 
     override fun onBindViewHolder(holder: IconViewHolder, position: Int) {
+        Log.d(TAG, "onBindViewHolder: ")
         val item = list[position]
 
-        holder.binding.tvIcon.text = item.name
+        holder.binding.tvTitle.text = item.name
         Picasso.with(context).load(item.url).into(holder.binding.cvIcon);
 
         holder.binding.ctlIcon.setOnClickListener {
