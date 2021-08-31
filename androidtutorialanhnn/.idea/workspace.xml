@@ -6,7 +6,7 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="HomeFragment" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="TestAdapter" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="AutoImportSettings">
@@ -39,7 +39,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b1d4bb7f-fc8d-424d-b567-b8ef016d7cba" name="Default Changelist" comment="Fix change layout manager">
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android_tutorial_anhnn/base/BaseAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android_tutorial_anhnn/base/BaseAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android_tutorial_anhnn/ui/home/HomeFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android_tutorial_anhnn/ui/home/HomeFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android_tutorial_anhnn/ui/home/TestAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android_tutorial_anhnn/ui/home/TestAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_app_infor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_app_infor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_nation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_nation.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629393205640</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fix review">
+      <created>1630209847905</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1630209847905</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -248,7 +262,8 @@
     <MESSAGE value="change image item" />
     <MESSAGE value="remove data binding" />
     <MESSAGE value="Fix review" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix review" />
+    <MESSAGE value="fix review" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix review" />
   </component>
   <component name="WindowStateProjectService">
     <state x="309" y="47" key="#Inspections" timestamp="1629198318496">
@@ -299,10 +314,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="129" y="55" key="MergeDialog/0.0.1366.738@0.0.1366.738" timestamp="1629910799721" />
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1630209379547">
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1630209852438">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1630209379547" />
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1630209852438" />
     <state x="509" y="146" key="chooseDestDirectoryDialog" timestamp="1630131496736">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

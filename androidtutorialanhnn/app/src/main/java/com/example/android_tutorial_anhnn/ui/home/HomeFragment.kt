@@ -32,7 +32,6 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(), AppInfoAdapter.IconIte
 
     override fun initView() {
 
-//        var staggeredGridLayoutManager = StaggeredGridLayoutManager(4, LinearLayoutManager.VERTICAL)
         val linearLayoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
         binding.rclvHome.layoutManager = linearLayoutManager
 

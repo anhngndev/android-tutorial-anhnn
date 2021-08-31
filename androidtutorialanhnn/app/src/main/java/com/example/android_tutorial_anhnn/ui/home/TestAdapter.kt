@@ -1,5 +1,8 @@
 package com.example.android_tutorial_anhnn.ui.home
 
+import android.annotation.SuppressLint
+import android.util.Log
+import android.view.View
 import androidx.databinding.ViewDataBinding
 import com.example.android_tutorial_anhnn.R
 import com.example.android_tutorial_anhnn.base.BaseAdapter
@@ -10,13 +13,15 @@ import com.example.android_tutorial_anhnn.databinding.ItemNationBinding
 import com.squareup.picasso.Picasso
 
 class TestAdapter : BaseAdapter() {
+    private val TAG = "TestAdapter"
 
     companion object {
         const val VIEW_TYPE_1 = 1
         const val VIEW_TYPE_2 = 2
     }
 
-    var testListener : TestListener? = null
+    var selectList = mutableListOf<Any>()
+    var testListener: TestListener? = null
 
     override fun getItemViewType(position: Int): Int {
 //        return if (position % 2 == 0) {
@@ -59,6 +64,13 @@ class TestAdapter : BaseAdapter() {
         init {
             binding.root.setOnClickListener {
                 testListener?.onClickItem(adapterPosition, getDataAtPosition(adapterPosition))
+
+                if (!selectList.contains(getDataAtPosition(adapterPosition))) {
+                    selectList.add(getDataAtPosition(adapterPosition))
+                } else {
+                    selectList.remove(getDataAtPosition(adapterPosition))
+                }
+                notifyItemChanged(adapterPosition)
             }
         }
 
@@ -68,6 +80,11 @@ class TestAdapter : BaseAdapter() {
             binding.tvTitle.text = item.name
             Picasso.with(binding.root.context).load(item.url).into(binding.cvIcon)
 
+            if (selectList.contains(item)) {
+                binding.tvIsSelected.visibility = View.VISIBLE
+            } else {
+                binding.tvIsSelected.visibility = View.GONE
+            }
         }
 
 
@@ -79,7 +96,15 @@ class TestAdapter : BaseAdapter() {
 
         init {
             binding.root.setOnClickListener {
+
                 testListener?.onClickItem(adapterPosition, getDataAtPosition(adapterPosition))
+
+                if (!selectList.contains(getDataAtPosition(adapterPosition))) {
+                    selectList.add(getDataAtPosition(adapterPosition))
+                } else {
+                    selectList.remove(getDataAtPosition(adapterPosition))
+                }
+                notifyItemChanged(adapterPosition)
             }
         }
 
@@ -88,7 +113,11 @@ class TestAdapter : BaseAdapter() {
             binding.tvNameNation.text = item.name
             binding.ivNation.setImageResource(item.flag)
 
-
+            if (selectList.contains(item)) {
+                binding.tvIsSelected.visibility = View.VISIBLE
+            } else {
+                binding.tvIsSelected.visibility = View.GONE
+            }
         }
     }
 
