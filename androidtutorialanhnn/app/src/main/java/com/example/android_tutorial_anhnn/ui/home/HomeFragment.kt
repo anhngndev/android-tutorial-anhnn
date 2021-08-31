@@ -1,5 +1,6 @@
 package com.example.android_tutorial_anhnn.ui.home
 
+import android.util.Log
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.example.android_tutorial_anhnn.FakeData
@@ -12,27 +13,42 @@ import com.example.android_tutorial_anhnn.ui.addapp.AddDialogListener
 import com.example.android_tutorial_anhnn.ui.deleteapp.DeleteDialogListener
 import com.example.android_tutorial_anhnn.ui.deleteapp.DeleteDialog
 
-class HomeFragment : BaseFragment<FragmentHomeBinding>(), AppInforAdapter.IconItemListener,
-    DeleteDialogListener, AddDialogListener {
+class HomeFragment : BaseFragment<FragmentHomeBinding>(), AppInfoAdapter.IconItemListener,
+    DeleteDialogListener, AddDialogListener{
 
-    private var appAdapter = AppInforAdapter()
+    private val TAG = "HomeFragment"
+
+    private var appAdapter = AppInfoAdapter()
+
+    private var homeAdapter = TestAdapter()
+
     private lateinit var chooseApp: AppInfor
     private var choosePosition = 0
+
+
     private var layoutMode = true
-    private lateinit var currentList: MutableList<AppInfor>
 
     override fun getLayoutId() = R.layout.fragment_home
 
     override fun initView() {
 
-        currentList = FakeData.getIcons()
-        var staggeredGridLayoutManager = StaggeredGridLayoutManager(4, LinearLayoutManager.VERTICAL)
-        binding.rclvHome.layoutManager = staggeredGridLayoutManager
-        appAdapter.list = currentList
-        appAdapter.iconListener = this
-        appAdapter.context = requireContext()
+//        var staggeredGridLayoutManager = StaggeredGridLayoutManager(4, LinearLayoutManager.VERTICAL)
+        val linearLayoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
+        binding.rclvHome.layoutManager = linearLayoutManager
 
-        binding.rclvHome.adapter = appAdapter
+        val list = mutableListOf<Any>()
+
+        list.addAll(FakeData.getAppInfoList())
+        list.addAll(FakeData.nationals)
+
+        homeAdapter.submitList(list)
+        homeAdapter.testListener = object: TestAdapter.TestListener{
+            override fun onClickItem(position: Int, item: Any) {
+                Log.d(TAG, "onClickItem() called with: position = $position, item = $item")
+            }
+        }
+
+        binding.rclvHome.adapter = homeAdapter
 
     }
 
