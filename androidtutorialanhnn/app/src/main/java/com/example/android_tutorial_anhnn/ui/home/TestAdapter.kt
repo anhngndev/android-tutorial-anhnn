@@ -20,7 +20,6 @@ class TestAdapter : BaseAdapter() {
         const val VIEW_TYPE_2 = 2
     }
 
-    var selectList = mutableListOf<Any>()
     var testListener: TestListener? = null
 
     override fun getItemViewType(position: Int): Int {
@@ -29,12 +28,13 @@ class TestAdapter : BaseAdapter() {
 //        } else {
 //            VIEW_TYPE_2
 //        }
-        return if (position < 3) {
-            VIEW_TYPE_1
-        } else {
-            VIEW_TYPE_2
-        }
+//        return if (position < 3) {
+//            VIEW_TYPE_1
+//        } else {
+//            VIEW_TYPE_2
+//        }
 
+        return VIEW_TYPE_2
     }
 
     override fun getLayoutId(viewType: Int): Int {
@@ -64,12 +64,6 @@ class TestAdapter : BaseAdapter() {
         init {
             binding.root.setOnClickListener {
                 testListener?.onClickItem(adapterPosition, getDataAtPosition(adapterPosition))
-
-                if (!selectList.contains(getDataAtPosition(adapterPosition))) {
-                    selectList.add(getDataAtPosition(adapterPosition))
-                } else {
-                    selectList.remove(getDataAtPosition(adapterPosition))
-                }
                 notifyItemChanged(adapterPosition)
             }
         }
@@ -80,11 +74,7 @@ class TestAdapter : BaseAdapter() {
             binding.tvTitle.text = item.name
             Picasso.with(binding.root.context).load(item.url).into(binding.cvIcon)
 
-            if (selectList.contains(item)) {
-                binding.tvIsSelected.visibility = View.VISIBLE
-            } else {
-                binding.tvIsSelected.visibility = View.GONE
-            }
+
         }
 
 
@@ -99,11 +89,8 @@ class TestAdapter : BaseAdapter() {
 
                 testListener?.onClickItem(adapterPosition, getDataAtPosition(adapterPosition))
 
-                if (!selectList.contains(getDataAtPosition(adapterPosition))) {
-                    selectList.add(getDataAtPosition(adapterPosition))
-                } else {
-                    selectList.remove(getDataAtPosition(adapterPosition))
-                }
+
+
                 notifyItemChanged(adapterPosition)
             }
         }
@@ -112,12 +99,6 @@ class TestAdapter : BaseAdapter() {
             super.bind(item)
             binding.tvNameNation.text = item.name
             binding.ivNation.setImageResource(item.flag)
-
-            if (selectList.contains(item)) {
-                binding.tvIsSelected.visibility = View.VISIBLE
-            } else {
-                binding.tvIsSelected.visibility = View.GONE
-            }
         }
     }
 

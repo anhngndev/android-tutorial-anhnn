@@ -6,7 +6,7 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="TestAdapter" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="AppInforAdapter" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="AutoImportSettings">
@@ -45,8 +45,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android_tutorial_anhnn/ui/home/HomeFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android_tutorial_anhnn/ui/home/HomeFragment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android_tutorial_anhnn/ui/home/TestAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android_tutorial_anhnn/ui/home/TestAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_app_infor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_app_infor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_nation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_nation.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,10 +61,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin File" />
-        <option value="Kotlin Object" />
-        <option value="Kotlin Interface" />
         <option value="layoutResourceFile" />
+        <option value="Kotlin Object" />
         <option value="Kotlin Class" />
+        <option value="Kotlin Interface" />
       </list>
     </option>
   </component>
@@ -95,28 +93,27 @@
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable-v24" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../FSoft_Document/android_basic_day9_giangdm/GST_Lesson9_Ex1_AnhNN51" />
-    <property name="settings.editor.selected.configurable" value="preferences.pathVariables" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res" />
+    <property name="settings.editor.selected.configurable" value="emulator" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateKotlinClassDialog.RecentsKey">
+      <recent name="com.example.android_tutorial_anhnn.ui.addapp" />
+    </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
       <recent name="com.example.android_tutorial_anhnn.ui.main" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Admin\Desktop\FTech_Document\android-tutorial-anhnn\androidtutorialanhnn\app\src\main\res\drawable-v24" />
-      <recent name="C:\Users\Admin\Desktop\FTech_Document\android-tutorial-anhnn\androidtutorialanhnn\app\src\main\res\layout" />
-      <recent name="C:\Users\Admin\Desktop\FTech_Document\android-tutorial-anhnn\androidtutorialanhnn\app\src\main\res" />
-      <recent name="C:\Users\Admin\Desktop\FTech_Document\android-tutorial-anhnn\androidtutorialanhnn\app\src\main\res\drawable" />
-      <recent name="C:\Users\Admin\Desktop\FTech_Document\android-tutorial-anhnn\androidtutorialanhnn\app\src\main\java\com\example\android_tutorial_anhnn\ui" />
     </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
       <recent name="com.example.android_tutorial_anhnn.ui.deleteapp" />
       <recent name="com.example.android_tutorial_anhnn.base" />
     </key>
-    <key name="CreateKotlinClassDialog.RecentsKey">
-      <recent name="com.example.android_tutorial_anhnn.ui.addapp" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\Desktop\FTech_Document\android-tutorial-anhnn\androidtutorialanhnn\app\src\main\res" />
+      <recent name="C:\Users\Admin\Desktop\FTech_Document\android-tutorial-anhnn\androidtutorialanhnn\app\src\main\res\layout" />
+      <recent name="C:\Users\Admin\Desktop\FTech_Document\android-tutorial-anhnn\androidtutorialanhnn\app\src\main\res\drawable" />
+      <recent name="C:\Users\Admin\Desktop\FTech_Document\android-tutorial-anhnn\androidtutorialanhnn\app\src\main\java\com\example\android_tutorial_anhnn\ui" />
+      <recent name="C:\Users\Admin\Desktop\FTech_Document\android-tutorial-anhnn\androidtutorialanhnn\app\src\main\res\values" />
     </key>
   </component>
   <component name="RunManager">
@@ -223,14 +220,21 @@
       <option name="project" value="LOCAL" />
       <updated>1629393205640</updated>
     </task>
-    <task id="LOCAL-00005" summary="fix review">
-      <created>1630209847905</created>
+    <task id="LOCAL-00005" summary="Add AppInfor">
+      <created>1629657404159</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1630209847905</updated>
+      <updated>1629657404159</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Fix function add and remove in Adapter">
+      <created>1629878702093</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1629878702093</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -262,69 +266,74 @@
     <MESSAGE value="change image item" />
     <MESSAGE value="remove data binding" />
     <MESSAGE value="Fix review" />
-    <MESSAGE value="fix review" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix review" />
+    <MESSAGE value="Add AppInfor" />
+    <MESSAGE value="Fix function add and remove in Adapter" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix function add and remove in Adapter" />
   </component>
   <component name="WindowStateProjectService">
     <state x="309" y="47" key="#Inspections" timestamp="1629198318496">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="309" y="47" key="#Inspections/0.0.1366.738@0.0.1366.738" timestamp="1629198318496" />
-    <state x="477" y="84" key="#com.intellij.ide.util.MemberChooser" timestamp="1630208803488">
+    <state x="477" y="84" key="#com.intellij.ide.util.MemberChooser" timestamp="1629655580899">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="477" y="84" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1630208803488" />
-    <state x="327" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1629654782329">
+    <state x="477" y="84" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1629655580899" />
+    <state x="327" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1629880847900">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="327" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.738@0.0.1366.738" timestamp="1629654782329" />
+    <state x="327" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.738@0.0.1366.738" timestamp="1629880847900" />
     <state x="443" y="162" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1629188298630">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="443" y="162" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.0.1366.738@0.0.1366.738" timestamp="1629188298630" />
-    <state x="263" y="123" key="AndroidCreateResourceFileDialog" timestamp="1630140013982">
+    <state x="92" y="92" width="1182" height="554" key="AVDManager" timestamp="1630483127938">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="263" y="123" key="AndroidCreateResourceFileDialog/0.0.1366.738@0.0.1366.738" timestamp="1630140013982" />
-    <state x="463" y="123" key="FileChooserDialogImpl" timestamp="1630150593433">
+    <state x="92" y="92" width="1182" height="554" key="AVDManager/0.0.1366.738@0.0.1366.738" timestamp="1630483127938" />
+    <state x="263" y="123" key="AndroidCreateResourceFileDialog" timestamp="1629189400111">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="463" y="123" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1630150593433" />
+    <state x="263" y="123" key="AndroidCreateResourceFileDialog/0.0.1366.738@0.0.1366.738" timestamp="1629189400111" />
+    <state x="463" y="123" key="FileChooserDialogImpl" timestamp="1629256172806">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="463" y="123" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1629256172806" />
     <state x="546" y="281" key="Github.Dialog.Accounts.Choose" timestamp="1629177549636">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="546" y="281" key="Github.Dialog.Accounts.Choose/0.0.1366.738@0.0.1366.738" timestamp="1629177549636" />
-    <state width="1323" height="263" key="GridCell.Tab.0.bottom" timestamp="1630208966083">
+    <state width="1323" height="8" key="GridCell.Tab.0.bottom" timestamp="1630481889454">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="263" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1630208966083" />
-    <state width="1323" height="263" key="GridCell.Tab.0.center" timestamp="1630208966083">
+    <state width="1323" height="8" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1630481889454" />
+    <state width="1323" height="8" key="GridCell.Tab.0.center" timestamp="1630481889453">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="263" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1630208966083" />
-    <state width="1323" height="263" key="GridCell.Tab.0.left" timestamp="1630208966082">
+    <state width="1323" height="8" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1630481889453" />
+    <state width="1323" height="8" key="GridCell.Tab.0.left" timestamp="1630481889453">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="263" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1630208966082" />
-    <state width="1323" height="263" key="GridCell.Tab.0.right" timestamp="1630208966083">
+    <state width="1323" height="8" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1630481889453" />
+    <state width="1323" height="8" key="GridCell.Tab.0.right" timestamp="1630481889454">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="263" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1630208966083" />
-    <state x="129" y="55" key="MergeDialog" timestamp="1629910799721">
+    <state width="1323" height="8" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1630481889454" />
+    <state x="129" y="55" key="MergeDialog" timestamp="1630476323155">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="129" y="55" key="MergeDialog/0.0.1366.738@0.0.1366.738" timestamp="1629910799721" />
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1630209852438">
+    <state x="129" y="55" key="MergeDialog/0.0.1366.738@0.0.1366.738" timestamp="1630476323155" />
+    <state x="178" y="28" key="SettingsEditor" timestamp="1630482795929">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1630209852438" />
-    <state x="509" y="146" key="chooseDestDirectoryDialog" timestamp="1630131496736">
+    <state x="178" y="28" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1630482795929" />
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1629878733859">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="509" y="146" key="chooseDestDirectoryDialog/0.0.1366.738@0.0.1366.738" timestamp="1630131496736" />
-    <state x="331" y="82" key="git4idea.branch.GitSmartOperationDialog" timestamp="1629910732409">
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1629878733859" />
+    <state x="331" y="82" key="git4idea.branch.GitSmartOperationDialog" timestamp="1630476320120">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="331" y="82" key="git4idea.branch.GitSmartOperationDialog/0.0.1366.738@0.0.1366.738" timestamp="1629910732409" />
+    <state x="331" y="82" key="git4idea.branch.GitSmartOperationDialog/0.0.1366.738@0.0.1366.738" timestamp="1630476320120" />
   </component>
 </project>

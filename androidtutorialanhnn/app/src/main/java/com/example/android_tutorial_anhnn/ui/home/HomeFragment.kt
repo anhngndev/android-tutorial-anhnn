@@ -37,7 +37,7 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(), AppInfoAdapter.IconIte
 
         val list = mutableListOf<Any>()
 
-        list.addAll(FakeData.getAppInfoList())
+//        list.addAll(FakeData.getAppInfoList())
         list.addAll(FakeData.nationals)
 
         homeAdapter.submitList(list)
