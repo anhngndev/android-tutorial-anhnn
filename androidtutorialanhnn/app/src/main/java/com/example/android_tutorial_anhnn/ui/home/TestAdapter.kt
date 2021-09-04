@@ -19,6 +19,7 @@ class TestAdapter : BaseAdapter() {
         const val VIEW_TYPE_1 = 1
         const val VIEW_TYPE_2 = 2
 
+
         const val PAYLOAD_SELECT = 3
         const val PAYLOAD_UNSELECT = 4
     }
