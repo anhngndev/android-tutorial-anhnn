@@ -9,9 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.android_tutorial_anhnn.R
 import com.example.android_tutorial_anhnn.data.model.AppInfor
 import com.example.android_tutorial_anhnn.data.model.National
-import com.example.android_tutorial_anhnn.databinding.ItemAppInforBinding
 import com.example.android_tutorial_anhnn.databinding.ItemNationBinding
-import com.squareup.picasso.Picasso
 
 class NationAdapter : RecyclerView.Adapter<NationAdapter.IconViewHolder>() {
 
@@ -40,14 +38,16 @@ class NationAdapter : RecyclerView.Adapter<NationAdapter.IconViewHolder>() {
         Log.d(TAG, "onBindViewHolder: ")
         val item = list[position]
 
-        holder.binding.tvNameNation.text = item.name
-        holder.binding.ivNation.setImageResource(item.flag)
+//        holder.binding.tvNameNation.text = item.name
+//        holder.binding.ivNation.setImageResource(item.flag)
 
+
+        holder.bind(item)
     }
 
     override fun getItemCount() = list.size
 
-    fun removeItem(position:Int, item: AppInfor) {
+    fun removeItem(position: Int, item: AppInfor) {
         list.removeAt(position)
         notifyItemRemoved(position)
         notifyItemRangeChanged(position, itemCount)
@@ -55,7 +55,7 @@ class NationAdapter : RecyclerView.Adapter<NationAdapter.IconViewHolder>() {
 
     }
 
-    fun addItem(position:Int, item: National) {
+    fun addItem(position: Int, item: National) {
         list.add(item)
         notifyItemInserted(position)
         Log.d(TAG, "addItem: ${item.name} $position $itemCount")
@@ -63,6 +63,11 @@ class NationAdapter : RecyclerView.Adapter<NationAdapter.IconViewHolder>() {
 
     class IconViewHolder(val binding: ItemNationBinding) :
         RecyclerView.ViewHolder(binding.root) {
+
+        fun bind(item: National) {
+            binding.tvNameNation.text = item.name
+            binding.ivNation.setImageResource(item.flag)
+        }
     }
 
     interface IconItemListener {

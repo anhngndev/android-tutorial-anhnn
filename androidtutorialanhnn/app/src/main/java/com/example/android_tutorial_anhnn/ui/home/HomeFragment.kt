@@ -38,9 +38,9 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(), AppInfoAdapter.IconIte
         val list = mutableListOf<Any>()
 
 //        list.addAll(FakeData.getAppInfoList())
-        list.addAll(FakeData.nationals)
+//        list.addAll(FakeData.nationals)
 
-        homeAdapter.submitList(list)
+        homeAdapter.resetList(FakeData.nationals)
         homeAdapter.testListener = object: TestAdapter.TestListener{
             override fun onClickItem(position: Int, item: Any) {
                 Log.d(TAG, "onClickItem() called with: position = $position, item = $item")
