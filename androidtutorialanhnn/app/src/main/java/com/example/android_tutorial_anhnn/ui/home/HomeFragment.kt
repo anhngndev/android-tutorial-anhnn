@@ -32,16 +32,15 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(), AppInfoAdapter.IconIte
 
     override fun initView() {
 
-//        var staggeredGridLayoutManager = StaggeredGridLayoutManager(4, LinearLayoutManager.VERTICAL)
         val linearLayoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
         binding.rclvHome.layoutManager = linearLayoutManager
 
         val list = mutableListOf<Any>()
 
-        list.addAll(FakeData.getAppInfoList())
-        list.addAll(FakeData.nationals)
+//        list.addAll(FakeData.getAppInfoList())
+//        list.addAll(FakeData.nationals)
 
-        homeAdapter.submitList(list)
+        homeAdapter.resetList(FakeData.nationals)
         homeAdapter.testListener = object: TestAdapter.TestListener{
             override fun onClickItem(position: Int, item: Any) {
                 Log.d(TAG, "onClickItem() called with: position = $position, item = $item")

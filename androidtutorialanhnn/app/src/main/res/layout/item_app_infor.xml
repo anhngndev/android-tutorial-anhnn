@@ -9,20 +9,28 @@
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="70dp"
         android:id="@+id/ctlIcon"
+        android:layout_width="70dp"
         android:layout_height="wrap_content"
         android:layout_margin="10dp">
 
         <ImageView
-            android:padding="4dp"
-            anhnn:layout_constraintTop_toTopOf="parent"
-            anhnn:layout_constraintStart_toStartOf="parent"
-            anhnn:layout_constraintEnd_toEndOf="parent"
             android:id="@+id/cvIcon"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            />
+            android:padding="4dp"
+            anhnn:layout_constraintEnd_toEndOf="parent"
+            anhnn:layout_constraintStart_toStartOf="parent"
+            anhnn:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:id="@+id/tvIsSelected"
+            anhnn:layout_constraintTop_toTopOf="parent"
+            anhnn:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/border_11_light_blue_fill"
+            android:visibility="gone"/>
 
         <TextView
             android:id="@+id/tvTitle"

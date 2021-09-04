@@ -1,5 +1,6 @@
 package com.example.android_tutorial_anhnn.base
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
@@ -47,11 +48,13 @@ abstract class BaseAdapter : RecyclerView.Adapter<BaseAdapter.BaseVH<Any>>() {
     }
 
     override fun onBindViewHolder(holder: BaseVH<Any>, position: Int, payloads: MutableList<Any>) {
-        super.onBindViewHolder(holder, position, payloads)
-
         val item = getDataAtPosition(holder.adapterPosition)
+        if (payloads.isNotEmpty()) {
+            holder.bind(item, payloads)
+        } else {
+            super.onBindViewHolder(holder, position, payloads)
 
-        holder.bind(item, payloads)
+        }
     }
 
     override fun getItemCount() = list.size
@@ -62,17 +65,17 @@ abstract class BaseAdapter : RecyclerView.Adapter<BaseAdapter.BaseVH<Any>>() {
         notifyDataSetChanged()
     }
 
-    fun add(item: Any){
+    fun add(item: Any) {
         list.add(item)
         notifyItemInserted(itemCount)
     }
 
-    fun update(item: Any, position:Int){
+    fun update(item: Any, position: Int) {
         list[position] = item
         notifyItemChanged(position)
     }
 
-    fun delete(position: Int){
+    fun delete(position: Int) {
         list.removeAt(position)
         notifyItemRemoved(position)
         notifyItemRangeChanged(position, itemCount)
