@@ -31,9 +31,8 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:origin/main" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:main" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
@@ -43,10 +42,6 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android_tutorial_anhnn/base/BaseAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android_tutorial_anhnn/base/BaseAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android_tutorial_anhnn/data/model/National.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android_tutorial_anhnn/data/model/National.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android_tutorial_anhnn/ui/home/HomeFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android_tutorial_anhnn/ui/home/HomeFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android_tutorial_anhnn/ui/home/NationAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android_tutorial_anhnn/ui/home/NationAdapter.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android_tutorial_anhnn/ui/home/TestAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android_tutorial_anhnn/ui/home/TestAdapter.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,10 +69,11 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="main" />
+        <entry key="$PROJECT_DIR$/.." value="create_select_mode" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="68cdd6ed-51d3-4be5-9e11-b01820b3252d" />
@@ -237,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629878702093</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fix bind payload">
+      <created>1630736168576</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1630736168576</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -251,7 +254,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/main" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
@@ -271,7 +274,8 @@
     <MESSAGE value="Fix review" />
     <MESSAGE value="Add AppInfor" />
     <MESSAGE value="Fix function add and remove in Adapter" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix function add and remove in Adapter" />
+    <MESSAGE value="fix bind payload" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix bind payload" />
   </component>
   <component name="WindowStateProjectService">
     <state x="309" y="47" key="#Inspections" timestamp="1629198318496">
@@ -306,42 +310,46 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="546" y="281" key="Github.Dialog.Accounts.Choose/0.0.1366.738@0.0.1366.738" timestamp="1629177549636" />
-    <state width="1323" height="331" key="GridCell.Tab.0.bottom" timestamp="1630660432426">
+    <state width="1323" height="118" key="GridCell.Tab.0.bottom" timestamp="1630739447754">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="331" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1630660432426" />
-    <state width="1323" height="331" key="GridCell.Tab.0.center" timestamp="1630660432426">
+    <state width="1323" height="118" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1630739447754" />
+    <state width="1323" height="118" key="GridCell.Tab.0.center" timestamp="1630739447754">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="331" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1630660432426" />
-    <state width="1323" height="331" key="GridCell.Tab.0.left" timestamp="1630660432426">
+    <state width="1323" height="118" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1630739447754" />
+    <state width="1323" height="118" key="GridCell.Tab.0.left" timestamp="1630739447753">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="331" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1630660432426" />
-    <state width="1323" height="331" key="GridCell.Tab.0.right" timestamp="1630660432426">
+    <state width="1323" height="118" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1630739447753" />
+    <state width="1323" height="118" key="GridCell.Tab.0.right" timestamp="1630739447754">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="331" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1630660432426" />
-    <state x="129" y="55" key="MergeDialog" timestamp="1630476323155">
+    <state width="1323" height="118" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1630739447754" />
+    <state x="129" y="55" key="MergeDialog" timestamp="1630739703427">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="129" y="55" key="MergeDialog/0.0.1366.738@0.0.1366.738" timestamp="1630476323155" />
+    <state x="129" y="55" key="MergeDialog/0.0.1366.738@0.0.1366.738" timestamp="1630739703427" />
     <state x="178" y="28" key="SettingsEditor" timestamp="1630482795929">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="178" y="28" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1630482795929" />
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1629878733859">
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1630736171613">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1629878733859" />
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1630736171613" />
     <state x="92" y="92" width="1182" height="554" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1630660649027">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="92" y="92" width="1182" height="554" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.738@0.0.1366.738" timestamp="1630660649027" />
-    <state x="331" y="82" key="git4idea.branch.GitSmartOperationDialog" timestamp="1630476320120">
+    <state x="500" y="283" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1630739772674">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="331" y="82" key="git4idea.branch.GitSmartOperationDialog/0.0.1366.738@0.0.1366.738" timestamp="1630476320120" />
+    <state x="500" y="283" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.738@0.0.1366.738" timestamp="1630739772674" />
+    <state x="331" y="82" key="git4idea.branch.GitSmartOperationDialog" timestamp="1630739679583">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="331" y="82" key="git4idea.branch.GitSmartOperationDialog/0.0.1366.738@0.0.1366.738" timestamp="1630739679582" />
     <state x="339" y="165" key="run.anything.popup" timestamp="1630484800445">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

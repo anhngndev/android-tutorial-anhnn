@@ -18,6 +18,9 @@ class TestAdapter : BaseAdapter() {
     companion object {
         const val VIEW_TYPE_1 = 1
         const val VIEW_TYPE_2 = 2
+
+        const val PAYLOAD_SELECT = 3
+        const val PAYLOAD_UNSELECT = 4
     }
 
     var testListener: TestListener? = null
@@ -104,12 +107,14 @@ class TestAdapter : BaseAdapter() {
 
         override fun bind(item: NationalVHData, payloads: MutableList<Any>) {
             super.bind(item, payloads)
-            Log.d(TAG, "bind payload: ")
-            for (i in payloads){
-                if (i == true){
-                    binding.tvIsSelected.visibility = View.VISIBLE
-                } else {
-                    binding.tvIsSelected.visibility = View.GONE
+            for (i in payloads) {
+                when (i) {
+                    PAYLOAD_SELECT -> {
+                        binding.tvIsSelected.visibility = View.VISIBLE
+                    }
+                    PAYLOAD_UNSELECT -> {
+                        binding.tvIsSelected.visibility = View.GONE
+                    }
                 }
             }
 
@@ -137,20 +142,26 @@ class TestAdapter : BaseAdapter() {
                 if (getAdapterSelectMode() == SELECT_MODE.SINGLE) {
                     if (item.isSelected) {
                         item.isSelected = !item.isSelected
-                        notifyItemChanged(newIndex, item.isSelected)
+                        notifyItemChanged(newIndex, PAYLOAD_UNSELECT)
                     } else {
                         val oldIndex = getLastItemSelected()
                         if (oldIndex != -1) {
                             (getDataAtPosition(oldIndex) as NationalVHData).isSelected = false
-                            notifyItemChanged(oldIndex, false)
+                            notifyItemChanged(oldIndex, PAYLOAD_UNSELECT)
                         }
                         item.isSelected = true
-                        notifyItemChanged(newIndex, true)
+                        notifyItemChanged(newIndex, PAYLOAD_SELECT)
                     }
 
                 } else if (getAdapterSelectMode() == SELECT_MODE.MULTIPLE) {
-                    item.isSelected = !item.isSelected
-                    notifyItemChanged(newIndex, item.isSelected)
+                    if (item.isSelected) {
+                        item.isSelected = !item.isSelected
+                        notifyItemChanged(newIndex, PAYLOAD_UNSELECT)
+                    } else {
+                        item.isSelected = !item.isSelected
+                        notifyItemChanged(newIndex, PAYLOAD_SELECT)
+                    }
+
                 }
             }
 
