@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivLeftRightTextViewIconLeft"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_profile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvLeftRightTextViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/ivLeftRightTextViewIconLeft"
+        app:layout_constraintStart_toEndOf="@id/ivLeftRightTextViewIconLeft"
+        app:layout_constraintTop_toTopOf="@id/ivLeftRightTextViewIconLeft"
+        tools:text="Điều khoản sử dụng" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivLeftRightTextViewIconRight"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:padding="4dp"
+        android:src="@drawable/ic_right_arrow"
+        app:layout_constraintBottom_toBottomOf="@id/ivLeftRightTextViewIconLeft"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ivLeftRightTextViewIconLeft" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
