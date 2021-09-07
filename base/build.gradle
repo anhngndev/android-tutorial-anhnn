@@ -1,22 +1,19 @@
 plugins {
-    id 'com.android.application'
+    id 'com.android.library'
     id 'kotlin-android'
     id 'kotlin-kapt'
-
 }
 
 android {
-    compileSdkVersion 30
-    buildToolsVersion "30.0.3"
+    compileSdkVersion androidCompileSdkVersion
+    buildToolsVersion androidBuildToolsVersion
 
     defaultConfig {
-        applicationId "com.example.android_tutorial_anhnn"
-        minSdkVersion 21
-        targetSdkVersion 30
-        versionCode 1
-        versionName "1.0"
+        minSdkVersion androidMinSdkVersion
+        targetSdkVersion androidTargetSdkVersion
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {
@@ -33,37 +30,28 @@ android {
         jvmTarget = '1.8'
     }
     buildFeatures {
-        dataBinding = true
-        viewBinding = true
+        dataBinding true
+        viewBinding true
     }
-
-    //kotlin DSL
-    configurations.all() {
-        resolutionStrategy.force "org.antlr:antlr4-runtime:4.7.1"
-        resolutionStrategy.force "org.antlr:antlr4-tool:4.7.1"
+    configurations.all {
+        resolutionStrategy {
+            force("org.antlr:antlr4-runtime:4.7.1")
+            force("org.antlr:antlr4-tool:4.7.1")
+        }
     }
 }
 
 dependencies {
 
-
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$rootProject.ext.kotlinVersion"
     implementation "androidx.core:core-ktx:$rootProject.ext.androidXCoreKTXVersion"
     implementation "androidx.appcompat:appcompat:$rootProject.ext.androidXAppCompatVersion"
-    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     testImplementation "junit:junit:$rootProject.ext.junitVersion"
     androidTestImplementation "androidx.test.ext:junit:$rootProject.ext.extJunitVersion"
     androidTestImplementation "androidx.test.espresso:espresso-core:$rootProject.ext.espressoCoreVersion"
     implementation rootProject.ext.constraintLayoutDependency
     implementation rootProject.ext.materialDependency
 
-    implementation project(':base')
-
-    implementation 'com.squareup.picasso:picasso:2.5.2'
-
-
-    implementation rootProject.ext.koinV3Dependencie.android
-    implementation rootProject.ext.koinV3Dependencie.android_ext
     implementation rootProject.ext.androidXDependencies.viewModel
     implementation rootProject.ext.androidXDependencies.LiveData
     implementation rootProject.ext.androidXDependencies.navigationFragment
@@ -80,4 +68,7 @@ dependencies {
     implementation rootProject.ext.androidXDependencies.room
     kapt rootProject.ext.androidXDependencies.roomCompiler
     implementation rootProject.ext.androidXDependencies.roomExtensionCoroutines
+    implementation rootProject.ext.eventbusDependencies.eventbus
+
+
 }

@@ -1,2 +1,4 @@
 rootProject.name = "android-tutorial-anhnn"
 include ':app'
+include ':base'
+
